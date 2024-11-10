@@ -1,0 +1,107 @@
+#gameContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+};
+
+#counters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+};
+
+#counter1, #counter2, #matchCounter1, #matchCounter2 {
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #ffbf00, #c9ee51);
+  padding: 0 15px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  min-width: 120px;
+  height: 40px;
+  white-space: nowrap;
+};
+
+#resetBtn {
+  width: 150px;
+  height: 40px;
+  font-size: medium;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ffbf00, #c9ee51);
+  margin-bottom: 20px;
+};
+
+#divBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr);   
+  width: 688px; 
+  height: 688px; 
+  margin: 100px auto; 
+  border: 1px solid black;
+  box-shadow: 
+    0 0 0 3px rgb(0, 0, 0), 
+    0 0 0 10px rgb(120, 120, 120), 
+    0 0 0 20px rgb(0, 0, 0);
+  gap: 2px; 
+  overflow: hidden; 
+};
+
+.cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  position: absolute;  
+  top: 0;
+  left: 0;
+  z-index: 1; 
+};
+
+.cell {
+  width: 171px;  
+  height: 171px;
+  border: 1px solid black;
+  background-color: rgb(94, 239, 239);
+  position: relative;
+  overflow: hidden;  
+  box-sizing: border-box;
+};
+
+#timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  padding: 0 20px;
+  border: 2px solid black;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #ffbf00, #c9ee51);
+  margin-top: 10px;
+};
+
+#winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  font-style: oblique;
+  color: #ff0000;
+};
+
+body {
+  background-image: url('/purim_BackGround.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+};
